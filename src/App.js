@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, Link, useLocation, NavLink } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Flex, Box, Text, Button } from "@chakra-ui/react";
 import { baseUrl, fetchApi } from "./utils/FetchApi";
 import Property from "./components/Property";
-import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import Search from "./components/Search";
 
@@ -16,11 +15,10 @@ const Banner = ({
   desc1,
   desc2,
   buttonText,
-  linkName,
   imageUrl,
 }) => (
   <Flex flexWrap='wrap' justifyContent='center' alignItems='center' m='10'>
-    <img src={imageUrl} width={500} height={300} />
+    <img src={imageUrl} width={500} height={300} alt='image' />
     <Box p='5'>
       <Text color='gray.500' fontSize='sm' fontWeight='medium'>
         {purpose}

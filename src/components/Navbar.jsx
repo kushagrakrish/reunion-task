@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes, Route, useNavigate, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Menu,
   MenuButton,
@@ -13,7 +13,6 @@ import {
 import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
 import { BsSearch } from "react-icons/bs";
 import { FiKey } from "react-icons/fi";
-import Search from "../components/Search";
 const Navbar = () => {
   return (
     <>
