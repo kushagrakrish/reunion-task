@@ -10,7 +10,7 @@ import noresult from "../images/noresult.svg";
 import SearchFilters from "./SearchFilters";
 const Search = () => {
   const [searchFilters, setSearchFilters] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const searchPurpose = searchParams.get("purpose");
   const [propertys, setPropertys] = useState([]);
 
