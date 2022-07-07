@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Flex, Box, Text, Icon } from "@chakra-ui/react";
 import { BsFilter } from "react-icons/bs";
-import {
-  Routes,
-  Route,
-  Link,
-  NavLink,
-  useSearchParams,
-} from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 import Property from "../components/Property";
 // import SearchFilters from "../components/SearchFilters";
