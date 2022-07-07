@@ -18,7 +18,7 @@ const Banner = ({
   imageUrl,
 }) => (
   <Flex flexWrap='wrap' justifyContent='center' alignItems='center' m='10'>
-    <img src={imageUrl} width={500} height={300} alt='image' />
+    <img src={imageUrl} width={500} height={300} alt='Banner' />
     <Box p='5'>
       <Text color='gray.500' fontSize='sm' fontWeight='medium'>
         {purpose}
@@ -40,7 +40,7 @@ const Banner = ({
   </Flex>
 );
 
-const App = ({ propertiesForSale, propertiesForRent }) => {
+const App = () => {
   const [sales, setSales] = useState([]);
   const [rents, setRents] = useState([]);
   useEffect(() => {
@@ -72,7 +72,7 @@ const App = ({ propertiesForSale, propertiesForRent }) => {
       }
     };
     propertiesForRent();
-  }, [propertiesForRent]);
+  }, []);
   return (
     <>
       <Box maxWidth='1280px' m='auto'>
