@@ -4,7 +4,6 @@ import { BsFilter } from "react-icons/bs";
 import { useSearchParams } from "react-router-dom";
 
 import Property from "../components/Property";
-// import SearchFilters from "../components/SearchFilters";
 import { baseUrl, fetchApi } from "../utils/FetchApi";
 import noresult from "../images/noresult.svg";
 import SearchFilters from "./SearchFilters";
